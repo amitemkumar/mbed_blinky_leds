@@ -120,35 +120,33 @@ The output should contain the following block transmitted at the blinking LED fr
 
 ```
 =============================== SYSTEM INFO  ================================
-Mbed OS Version: 999999
+Mbed OS Version: 51104
 CPU ID: 0x410fc241
 Compiler ID: 2
-Compiler Version: 60300
+Compiler Version: 80200
 RAM0: Start 0x20000000 Size: 0x30000
-RAM1: Start 0x1fff0000 Size: 0x10000
-ROM0: Start 0x0 Size: 0x100000
+RAM1: Start 0x10000000 Size: 0x10000
+ROM0: Start 0x8000000 Size: 0x200000
 ================= CPU STATS =================
-Idle: 98% Usage: 2%
+Idle: 4% Usage: 96%
 ================ HEAP STATS =================
-Current heap: 1096
-Max heap size: 1096
+Current heap: 1216
+Max heap size: 1216
 ================ THREAD STATS ===============
-ID: 0x20001eac
-Name: main_thread
+ID: 0x20005494
+Name: main
 State: 2
 Priority: 24
 Stack Size: 4096
-Stack Space: 3296
-
-ID: 0x20000f5c
-Name: idle_thread
+Stack Space: 3136
+ID: 0x20004e24
+Name: rtx_idle
 State: 1
 Priority: 1
 Stack Size: 512
-Stack Space: 352
-
-ID: 0x20000f18
-Name: timer_thread
+Stack Space: 160
+ID: 0x20004de0
+Name: rtx_timer
 State: 3
 Priority: 40
 Stack Size: 768
