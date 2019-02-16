@@ -7,6 +7,7 @@
 #include "stats_report.h"
 
 DigitalOut led1(LED1);
+DigitalOut led2(LED2);
 
 #define SLEEP_TIME                  500 // (msec)
 #define PRINT_AFTER_N_LOOPS         20
@@ -20,6 +21,7 @@ int main()
     while (true) {
         // Blink LED and wait 0.5 seconds
         led1 = !led1;
+		led2 = !led2;
         wait_ms(SLEEP_TIME);
 
         if ((0 == count) || (PRINT_AFTER_N_LOOPS == count)) {
